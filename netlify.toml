@@ -1,0 +1,9 @@
+[build]
+  # هذا يخبر Netlify أن كل الأوامر يجب أن تعمل من داخل مجلد client
+  base = "client"
+  
+  # هذا هو أمر البناء، سيقوم بتثبيت الحزم ثم البناء
+  command = "npm install && npm run build"
+  
+  # هذا هو المجلد الذي يحتوي على الموقع النهائي
+  publish = "build"
